@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .form {
+            width: 500px;
+            height: 650px;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+    </style>
+</head>
+
+<body>
+    <!--This is a Headind-->
+    <h1 style="text-align:center;">Fill Your Details</h1>
+    <!--Form Start Here -->
+    <div class="form">
+        <form action="#">
+            <label for="Name">Name <span style="color: red;">*</span></label><br>
+            <input type="text" name="name" placeholder="Enter Your name" required><br><br>
+            <label for="email">Email<span style="color: red;">*</span></label><br>
+            <input type="email" name="email" placeholder="test@gmail.com" required><br><br>
+            <label for="name">Roll No<span style="color: red;">*</span></label><br>
+            <input type="number" name="roll" placeholder="roll" required><br><br>
+            <label for="rateCourse">How do you rate our course?</label><br>
+            <!--For Drop Down -->
+            <select>
+                <option value="1">Excellent</option>
+                <option value="2">Good</option>
+                <option value="3">Average</option>
+                <option value="4">Poor</option>
+            </select>
+            <br>
+            <br>
+            <!--For CheckBox-->
+            <label for="favTopic">Your Favourite Topic in HTML</label><br>
+            <input type="checkbox" name="Structural Elements">Structural Elements<br>
+            <input type="checkbox" name="Links and List">Links and List<br>
+            <input type="checkbox" name="HTML Media">HTML Media<br>
+            <input type="checkbox" name="HTML Table">HTML Table<br>
+            <input type="checkbox" name="Grouping Elements">Grouping Elements<br>
+            <input type="checkbox" name="Forms">Forms<br>
+            <br>
+            <!--For Radio Button-->
+            <label for="LikeHtmlornot">Do you like the HTML course?</label><br>
+            <input type="radio" name="HTML">Yes
+            <input type="radio" name="HTML">No
+            <br>
+            <br>
+            <label for="aboutCourse">Few Words about Course</label><br>
+            <textarea name="aboutCourse" id="" cols="50" rows="8"></textarea><br><br>
+            <!--For Sumbit Button-->
+            <button style="width: 170px; align-items: center; margin-left: 105px;">Submit</button>
+    </div>
+</body>
+
+</html>
